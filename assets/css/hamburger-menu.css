@@ -1,8 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 .hamburger-button {
-  display: flex; /* media query時にはflexでもどして */
+  display: none;
+  display: flex; 
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -15,10 +17,11 @@
   width: 40px;
   height: 40px;
   outline: none;
+
 }
 .hamburger-button svg {
-  height: 25px; /* autoではなく同じ数字で */
-  width: 25px; /* autoではなく同じ数字で */
+  height: 25px; 
+  width: 25px; 
 }
 .hamburger-button path {
   fill: #000;

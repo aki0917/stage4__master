@@ -20,14 +20,15 @@
   
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/hamburger-menu.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <header class="header">
     <div class="header__inner">
-      <h1 class="header__title">
-        <a href="#"><img src="./assets/img/INTERIOR.png" alt="ロゴ"></a>
-      </h1>
+      <div class="header__title english">
+        <h1><a href="#">INTERIOR</a></h1>
+      </div>
       <nav class="header__nav english">
         <div class="header__nav--item">
           <a href="#" english>Features</a>
@@ -53,28 +54,44 @@
           <a href=""><img src="./assets/img/Vector.png" alt="アイコン"></a>
         </div>
       </div>
+
+      <button class="hamburger-button"></button>
+      <nav class="hamburger-nav">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     </div>
   </header>
   <main>
     <div class="main__visual">
       <div class="main__visual__text">
-        <h2>あなただけのインテリアが見つかる</h2>
+        <h2>あなただけの<br class="sp__br">インテリアが見つかる</h2>
       </div>
       <div class="main__visual--scroll">
-        <span>SCROLL</span>
-        <div class="arrow"></div> 
+        <div class="main__visual--scroll-arrow">
+          <img src="./assets/img/Arrow 1.png" alt="画像">
+        </div> 
+        <div class="main__visual--scroll-text english">
+          <span>S</span><span>C</span><span>R</span><span>O</span><span>L</span><span>L</span>
+        </div>
       </div>
     </div>
 
     <section class="features">
       <div class="features__container">
-        <div class="features__title">
+        <div class="features__title english">
           <h2>Features</h2>
         </div>
         <div class="features__items">
           <div class="features__item">
             <div class="features__img">
-              <img src="./assets/img/Rectangle 51.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 51.jpg" alt="画像"></a>
             </div>
             <div class="features__main">
               <p>イタリアから輸入</p>
@@ -85,7 +102,7 @@
           </div>
           <div class="features__item">
             <div class="features__img">
-              <img src="./assets/img/Rectangle 52.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 53.jpg" alt="画像"></a>
             </div>
             <div class="features__main">
               <p>オーダーメイド可能</p>
@@ -96,7 +113,7 @@
           </div>
           <div class="features__item">
             <div class="features__img">
-              <img src="./assets/img/Rectangle 53.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 52.jpg" alt="画像"></a>
             </div>
             <div class="features__main">
               <p>永久保証</p>
@@ -118,7 +135,7 @@
         <div class="products__items">
           <div class="products__item">
             <div class="products__img">
-              <img src="./assets/img/Rectangle 19-1.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 19.jpg" alt="画像"></a>
             </div>
             <div class="products__main">
               <p>椅子</p>
@@ -133,7 +150,7 @@
 
           <div class="products__item">
             <div class="products__img">
-              <img src="./assets/img/Rectangle 19-2.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 19-1.jpg" alt="画像"></a>
             </div>
             <div class="products__main">
               <p>椅子</p>
@@ -148,7 +165,7 @@
 
           <div class="products__item">
             <div class="products__img">
-              <img src="./assets/img/Rectangle 19-3.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 19-2.jpg" alt="画像"></a>
             </div>
             <div class="products__main">
               <p>椅子</p>
@@ -163,7 +180,7 @@
 
           <div class="products__item">
             <div class="products__img">
-              <img src="./assets/img/Rectangle 19-4.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 19-5.jpg" alt="画像"></a>
             </div>
             <div class="products__main">
               <p>椅子</p>
@@ -178,7 +195,7 @@
 
           <div class="products__item">
             <div class="products__img">
-              <img src="./assets/img/Rectangle 19-1.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 19-3.jpg" alt="画像"></a>
             </div>
             <div class="products__main">
               <p>椅子</p>
@@ -193,7 +210,7 @@
 
           <div class="products__item">
             <div class="products__img">
-              <img src="./assets/img/Rectangle 19-5.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 19-4.jpg" alt="画像"></a>
             </div>
             <div class="products__main">
               <p>椅子</p>
@@ -214,6 +231,9 @@
 
     <section class="middle">
       <div class="middle__container">
+        <div class="middle__img">
+          <a href="#"><img src="./assets/img/Rectangle 20.jpg" alt="画像"></a>
+        </div>
         <div class="middle__content">
           <div class="middle__text">
             <h2>ひとつずつ、丁寧にお作りします</h2>
@@ -223,9 +243,6 @@
               本文が入ります本文が入ります本文が入ります本文が入ります
             </p>
           </div>
-        </div>
-        <div class="middle__img">
-          <img src="./assets/img/Rectangle 20.jpg" alt="">
         </div>
       </div>
     </section>
@@ -238,7 +255,7 @@
         <div class="news__content">
           <div class="news__item">
             <div class="news__img">
-              <img src="./assets/img/Rectangle 22.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 22.jpg" alt="画像"></a>
             </div>
             <div class="news__text">
               <h2>新作入荷しました</h2>
@@ -248,7 +265,7 @@
           </div>
           <div class="news__item">
             <div class="news__img">
-              <img src="./assets/img/Rectangle 22-1.jpg" alt="画像">
+              <a href="#"><img src="./assets/img/Rectangle 22-1.jpg" alt="画像"></a>
             </div>
             <div class="news__text">
               <h2>新作入荷しました</h2>
@@ -265,7 +282,7 @@
 
     <section class="gallery">
       <div class="gallery__container">
-        <div class="gallery__title">
+        <div class="gallery__title english">
           <h2>Gallery</h2>
         </div>
         <div class="swiper-container">
@@ -333,14 +350,12 @@
             <p class="footer__info--tel">0120-123-1234</p>
           </div>
           <div class="footer__map">
-            <div class="footer__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.407811525649!2d135.69946347566656!3d34.84597897540402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011ba70f29327d%3A0x160091c92622336c!2z44CSNTczLTAxMDIg5aSn6Ziq5bqc5p6a5pa55biC6ZW35bC-5a625YW355S677yR5LiB55uu77yS4oiS77yTIFJpa2Vu5p6a5pa5!5e0!3m2!1sja!2sjp!4v1712455720762!5m2!1sja!2sjp" width="420" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.407811525649!2d135.69946347566656!3d34.84597897540402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011ba70f29327d%3A0x160091c92622336c!2z44CSNTczLTAxMDIg5aSn6Ziq5bqc5p6a5pa55biC6ZW35bC-5a625YW355S677yR5LiB55uu77yS4oiS77yTIFJpa2Vu5p6a5pa5!5e0!3m2!1sja!2sjp!4v1712455720762!5m2!1sja!2sjp" width="420" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-      <p>@2021 INTERIOR</p>
     </div>
+    <p>@2021 INTERIOR</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="./assets/js/swiper-bundle.js"></script>

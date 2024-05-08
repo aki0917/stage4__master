@@ -52,13 +52,13 @@ $(function(){
   
   /* Prepare */
   function prepare() {
-    navHeight = $nav.outerHeight(); /* responsive対応 */
-    navWidth = $nav.outerWidth(); /* responsive対応 */
+    navHeight = $nav.outerHeight(); 
+    navWidth = $nav.outerWidth(); 
     close();
     setTimeout(() => {
       $nav.css('display', 'block');
       $nav.css('transition-duration', (options.duration / 1000) + 's');
-    }, 0); /* 表示される不具合対策 */
+    }, 0); 
   }
   /* Close */
   function close() {
