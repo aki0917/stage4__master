@@ -39,6 +39,13 @@ a {
   }
 }
 
+.sp__display {
+
+  @include mq('sp') {
+    display: none;
+  }
+}
+
 
 .header {
   position: fixed;
@@ -48,6 +55,11 @@ a {
   padding: 0 40px;
   z-index: 1;
   margin-top: 22px;
+
+  @include mq( 'sp' ) {
+    padding: 0 15px;
+    margin-top: 17px;
+  }
 
   &__inner {
     display: flex;
@@ -119,14 +131,12 @@ a {
     padding: 0 40px;
     font-size: 50px;
     font-weight: 300;
+    font-size: 50px;
 
-    h2 {
-      font-size: 50px;
-
-      @include mq( 'sp' ) {
-        font-size: 24px;
-      
-      }
+    @include mq( 'sp' ) {
+      font-size: 24px;
+      top: 32%;
+      padding: 0 15px;
     }
   }
 
@@ -177,6 +187,7 @@ a {
 
     @include mq( 'sp' ) {
       font-size: 24px;
+      padding-left: 30px;
     }
     
 
@@ -193,7 +204,7 @@ a {
       @include mq( 'sp' ) {
         width: 10px;
         height: 10px;
-        left: 40%;
+        left: 35%;
         top: 20%;
       }
     }
@@ -207,6 +218,7 @@ a {
     @include mq( 'sp' ) {
       flex-direction: column;
       gap: 40px;
+      margin-top: 36px;
     }
   }
 
@@ -217,7 +229,7 @@ a {
 
     @include mq( 'sp' ) {
       width: 100%;
-      padding: 0 3%;
+      padding: 0 5%;
     }
 
     &:last-child {
@@ -229,6 +241,10 @@ a {
     font-size: 18px;
     font-weight: 600;
     margin-top: 10px;
+
+    @include mq( 'sp' ) {
+      margin-top: 18px;
+    }
   }
 
   &__text {
@@ -241,7 +257,8 @@ a {
   margin-top: 181px;
 
   @include mq( 'sp' ) {
-    margin-top: 80px;
+    margin-top: 87px;
+    padding: 0 0 80px;
   }
 
   &__container {
@@ -275,7 +292,7 @@ a {
         width: 10px;
         height: 10px;
         left: 35%;
-        top: 35%;
+        top: 20%;
       } 
     }
   }
@@ -285,6 +302,11 @@ a {
     gap: 40px;
     flex-wrap: wrap;
     margin-top: 60px;
+
+    @include mq( 'sp' ) {
+      padding: 0 6%;
+      margin-top: 50px;
+    }
   }
 
   &__item {
@@ -318,6 +340,11 @@ a {
     font-weight: 300;
     margin-top: 5px;
     line-height: 26px;
+
+    @include mq( 'sp' ) {
+      margin-top: 15px;
+      line-height: 22px;
+    }
   }
 
   &__price {
@@ -335,6 +362,8 @@ a {
 
     @include mq( 'sp' ) {
       justify-content: center;
+      margin-top: 46px;
+      margin-bottom: 8px;
     }
 
     a {
@@ -363,7 +392,7 @@ a {
   padding: 108px 0;
 
   @include mq( 'sp' ) {
-  padding: 0 0 40px;
+    padding: 0 0 40px;
   }
 
   &__container {
@@ -375,7 +404,7 @@ a {
     align-items: center;
 
     @include mq( 'sp' ) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 10px;
     }
   }
@@ -394,7 +423,6 @@ a {
 
       @include mq( 'sp' ) {
         font-size: 18px;
-        text-align: center;
       }
     }
 
@@ -403,7 +431,7 @@ a {
       line-height: 36px;
 
       @include mq( 'sp' ) {
-        font-size: 16px;
+       margin-top: 16px;
       }
     }
   }
@@ -422,7 +450,7 @@ a {
   padding: 70px 120px 180px;
 
   @include mq( 'sp' ) {
-    padding: 40px 4% 80px;
+    padding: 55px 4% 80px;
   } 
 
   &__container {
@@ -440,6 +468,7 @@ a {
     @include mq( 'sp' ) {
       font-size: 24px;
       text-align: center;
+      padding-left: 22px;
     } 
 
     &::before {
@@ -468,7 +497,8 @@ a {
 
     @include mq( 'sp' ) {
       flex-direction: column;
-      gap: 40px;
+      gap: 10px;
+      margin-top: 40px;
     }
   }
 
@@ -480,8 +510,10 @@ a {
 
     @include mq( 'sp' ) {
       flex-direction: column;
-      gap: 11px;
+      gap: 12px;
       align-items: start;
+      margin-top: 35px;
+      margin-bottom: -8px;
     }
 
     h2 {
@@ -506,14 +538,11 @@ a {
 
     @include mq( 'sp' ) {
       margin-top: 11px;
-      line-height: 36px;
+      line-height: 35px;
     }
   }
 
   &__img {
-    @include mq( 'sp' ) {
-      margin-bottom: 35px;
-    } 
 
     img {
       @include mq( 'sp' ) {
@@ -528,7 +557,7 @@ a {
     justify-content: center;
 
     @include mq( 'sp' ) {
-      margin-top: 40px;
+      margin-top: 0px;
     }
 
     a {
@@ -561,7 +590,7 @@ a {
     margin-bottom: 54px;
 
     @include mq( 'sp' ) {
-      margin-top: 35px;
+      margin-bottom: 40px;
     } 
 
     &::before {
@@ -577,7 +606,7 @@ a {
       @include mq( 'sp' ) {
         width: 10px;
         height: 10px;
-        left: 35%;
+        left: 36%;
         top: 20%;
       } 
     }
@@ -628,10 +657,10 @@ a {
 
 .footer {
   background-color: #887260;
-  padding: 80px 40px 43px 42px;
+  padding: 53px 40px 42px;
 
   @include mq( 'sp' ) {
-    padding: 40px 5%;
+    padding: 40px 4%;
   }
 
   &__contents {
@@ -645,8 +674,12 @@ a {
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     margin-left: -8px;
+
+    @include mq( 'sp' ) {
+      margin-bottom: 20px;
+    }
 
     h2 {
       font-size: 36px;
@@ -689,7 +722,7 @@ a {
 
     @include mq( 'sp' ) {
       flex-direction: column-reverse;
-      gap: 20px;
+      gap: 30px;
       align-items: start;
     }
 
@@ -705,8 +738,15 @@ a {
       margin-top: 11px;
     }
   }
-  p {
+  small {
     color: #fff;
+    font-size: 12px;
+    margin-top: 30px;
+    display: block;
+
+    @include mq( 'sp' ) {
+     margin-top: 0;
+    }
   }
 
   &__map {
@@ -742,7 +782,7 @@ a {
   position: relative;
 
   @include mq( 'sp' ) {
-   padding: 0 5%;
+   padding: 0 7%;
   } 
 }
 
@@ -757,6 +797,7 @@ a {
     display: none;
     background: none;
     top: 0;
+    right: 5px;
 
     @include mq ('sp') {
       display: block;
